@@ -1,0 +1,11 @@
+name: Get JavaScript
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Get JavaScript file
+      run: |
+        echo "${{ secrets.SECRET_JAVASCRIPT }}" > hellonicetomeetyou.min.js
